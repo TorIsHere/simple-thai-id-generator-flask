@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Thai citizens ID generator </title>
+    <style>
+      .center {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+      <h1 class="center">Hello!</h1>
+      {% if id %}
+      <h3 class="center">{{ id }}</h3>
+      {% else %}
+      <h3 class="center">Press to generate ID</h3>
+      {% endif %}
+      <form class="center" action="/generate" method="get">
+        <button type="submit" value="Generate ID"> Generate ID</button>
+      </form>
+
+  </body>
+</html>
